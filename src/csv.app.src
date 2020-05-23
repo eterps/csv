@@ -1,0 +1,15 @@
+{application, csv,
+ [{description, "A CSV parser for the Gleam programming language"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    gleam_stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+]}.
