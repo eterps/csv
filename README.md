@@ -17,6 +17,13 @@ csv.parse("id,value\n1,one\n2,two\n")
 // )
 ```
 
+## TODO
+
+- [ ] Support `\r`/`\n` combinations
+- [ ] Strip whitespace
+- [ ] Support quoting
+- [ ] Improve documentation
+
 ## Quick start
 
 ```sh
