@@ -1,11 +1,21 @@
 import csv
 import gleam/should
 
-//csv.split_with(";", "\"foo\", \"bar\"")
-//|> should.equal([["foo", "bar"]])
 pub fn split_with_test() {
   csv.split_with(";", "id;value\n1;one\n2;two\n")
   |> should.equal([["id", "value"], ["1", "one"], ["2", "two"]])
+
+  csv.split_with(";", "id;value\r\n1;one\r\n2;two")
+  |> should.equal([["id", "value"], ["1", "one"], ["2", "two"]])
+
+  csv.split_with(";", "id ;value\n1 ; one \n2;   two \n ")
+  |> should.equal([["id", "value"], ["1", "one"], ["2", "two"]])
+
+  csv.split_with(",", "\"foo\", \"bar\"")
+  |> should.equal([["foo", "bar"]])
+
+  csv.split_with(",", " \" foo \" , \" bar \" ")
+  |> should.equal([["foo", "bar"]])
 }
 
 pub fn split_test() {
