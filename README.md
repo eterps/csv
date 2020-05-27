@@ -19,9 +19,9 @@ csv.parse("id,value\n1,one\n2,two\n")
 
 ## TODO
 
-- [ ] Support `\r`/`\n` combinations
-- [ ] Strip whitespace
-- [ ] Support quoting
+- [x] Support `\r`/`\n` combinations
+- [x] Strip whitespace
+- [x] Support quoting
 - [ ] Improve documentation
 
 ## Quick start
