@@ -22,6 +22,7 @@ csv.parse("id,value\n1,one\n2,two\n")
 - [x] Support `\r`/`\n` combinations
 - [x] Strip whitespace
 - [x] Support quoting
+- [ ] Move to a full blown parser or don't support quoting for now
 - [ ] Improve documentation
 
 ## Quick start
